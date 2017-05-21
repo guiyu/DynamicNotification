@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DynamicNotification</string>
+    <string name="btn_startNotification">通知栏</string>
+    <string name="dynamic_remote_text">动态调整后的通知栏字符串</string>
+</resources>
