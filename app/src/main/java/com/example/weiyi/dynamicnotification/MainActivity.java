@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.NotificationCompat;
 import android.view.View;
+import android.view.ViewStub;
 import android.widget.Button;
 import android.widget.RemoteViews;
 
@@ -38,7 +39,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         RemoteViews remoteViews = new RemoteViews(this.getPackageName(), R.layout.remoteview_layout);
 
+//        remoteViews.setTextViewText(R.id.dynamic_remote_text, "TextOther");
+
+//        ViewStub stub;
+//        stub.setLayoutResource();
+        remoteViews.setInt(R.id.viewstub, "setLayoutResource", R.layout.dynamic_imageview_layout);
         remoteViews.setViewVisibility(R.id.viewstub, View.VISIBLE);
+
         Notification notificationCompat = new NotificationCompat.Builder(this)
                 .setContent(remoteViews)
                 .setSmallIcon(R.mipmap.ic_launcher)

@@ -6,6 +6,7 @@
     <TextView
         android:id="@+id/dynamic_remote_text"
         android:text="@string/dynamic_remote_text"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="28sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
